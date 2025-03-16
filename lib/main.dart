@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:codehub/home_page.dart';
-import 'package:codehub/course_details_page.dart';
-import 'package:codehub/global_variables.dart';
+import 'package:codehub_platform/homepage.dart';
 
 void main() {
   runApp(const MyApp());
