@@ -71,7 +71,7 @@ class _CourseListState extends State<CourseList> {
                               },
                               child: Chip (
                                   side: const BorderSide(
-                                    color: const Color.fromRGBO(0, 0, 0, 0.01),
+                                    color: Color.fromRGBO(0, 0, 0, 0.01),
                                   ),
                                   backgroundColor: selected_category == filter ? Colors.amber  :const Color.fromRGBO(230, 225, 225, 1),
                                   label: Text(filter,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
