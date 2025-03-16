@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.bookmark_added_rounded),
               label: '')
         ],
-        iconSize: 32,
+        iconSize: 30,
         selectedFontSize: 0,
         unselectedFontSize: 0,
       ),
