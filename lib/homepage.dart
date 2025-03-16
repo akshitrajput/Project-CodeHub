@@ -1,6 +1,6 @@
 import 'package:codehub_platform/course_list_page.dart';
-import 'package:flutter/material.dart';
 import 'package:codehub_platform/enrollments_page.dart';
+import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
