@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:codehub/global_variables.dart';
-import 'package:codehub/course_details_page.dart';
-import 'package:codehub/course_card.dart';
+import 'package:codehub_platform/global_variables.dart';
+import 'package:codehub_platform/course_details_page.dart';
+import 'package:codehub_platform/course_card.dart';
 
 class CourseList extends StatefulWidget {
   const CourseList({super.key});

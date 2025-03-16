@@ -1,4 +1,4 @@
-import 'package:codehub/global_variables.dart';
+import 'package:codehub_platform/global_variables.dart';
 import 'package:flutter/material.dart';
 
 class EnrollmentsPage extends StatelessWidget {

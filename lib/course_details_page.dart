@@ -1,6 +1,5 @@
-import 'package:codehub/home_page.dart';
+import 'package:codehub_platform/homepage.dart';
 import 'package:flutter/material.dart';
-import 'package:codehub/global_variables.dart';
 
 class CourseDetailsPage extends StatefulWidget {
   final Map<String, Object> course;
