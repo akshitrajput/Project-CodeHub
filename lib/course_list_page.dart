@@ -17,7 +17,7 @@ class _CourseListState extends State<CourseList> {
     const int price =0;
     final border = OutlineInputBorder(
         borderSide: BorderSide(
-          color: Color.fromRGBO(220, 220, 220, 1),
+          color: Color.fromRGBO(218, 220, 220, 1),
         ),
         borderRadius: BorderRadius.horizontal(
           left: Radius.circular(50),)

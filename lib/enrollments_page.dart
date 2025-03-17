@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:codehub_platform/global_variables.dart';
 
-
 class EnrollmentsPage extends StatelessWidget {
   const EnrollmentsPage({super.key});
   @override
