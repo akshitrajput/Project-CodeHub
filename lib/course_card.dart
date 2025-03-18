@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class CourseCard extends StatelessWidget {
   final String title;
-  final String subtitle='';
+  final String subtitle = '';
   final int price;
   final String image;
+
   const CourseCard({
     super.key,
     required this.title,
@@ -24,7 +25,6 @@ class CourseCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-
           Center(
             child: Container(
               padding: const EdgeInsets.all(16.0),
@@ -34,11 +34,13 @@ class CourseCard extends StatelessWidget {
               ),
             ),
           ),
-
           Container(
             decoration: BoxDecoration(
               shape: BoxShape.rectangle,
-              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20.0)),
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(20),
+                bottomRight: Radius.circular(20.0),
+              ),
               color: Color.fromRGBO(255, 191, 0, 1.0),
             ),
             child: Padding(
@@ -47,25 +49,33 @@ class CourseCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween, // This ensures the button stays at the right
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(title, style: Theme.of(context).textTheme.titleMedium),
+                        Text(
+                          title,
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ),
                         const SizedBox(height: 5),
-                        Text('Rs. $price', style: Theme.of(context).textTheme.bodySmall),
+                        Text(
+                          'Rs. $price',
+                          style: Theme.of(context).textTheme.bodySmall,
+                        ),
                         const SizedBox(height: 5),
                         Text(
                           "• CodeHub",
-                          style: TextStyle(fontSize: 12, color: Color.fromRGBO(
-                              3, 87, 155, 1.0),fontFamily: 'Lato',fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Color.fromRGBO(3, 87, 155, 1.0),
+                            fontFamily: 'Lato',
+                            fontWeight: FontWeight.bold,
+                          ),
                           softWrap: true, // Allow text to wrap onto the next line
                         ),
                       ],
                     ),
                   ),
-
                   TextButton(
                     style: TextButton.styleFrom(
                       backgroundColor: Colors.black, // Set the background color of the button
@@ -95,7 +105,6 @@ class CourseCard extends StatelessWidget {
             ),
           ),
         ],
-
       ),
     );
   }

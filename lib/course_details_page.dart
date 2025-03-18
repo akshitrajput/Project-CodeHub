@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 
 class CourseDetailsPage extends StatefulWidget {
   final Map<String, Object> course;
+
   const CourseDetailsPage({
     super.key,
     required this.course,
   });
+
   @override
   State<CourseDetailsPage> createState() => _CourseDetailsPageState();
 }
@@ -17,6 +19,7 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
   @override
   Widget build(BuildContext context) {
     var course = widget.course;
+
     return Scaffold(
       appBar: AppBar(
         leading: GestureDetector(
@@ -24,8 +27,9 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => HomePage(
-                ),),);
+                builder: (context) => HomePage(),
+              ),
+            );
           },
           child: Icon(Icons.arrow_back_ios_new_rounded),
         ),
@@ -40,17 +44,13 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
           ),
         ],
         centerTitle: true,
-        title: const Text(
-          'Course Details',
-        ),
+        title: const Text('Course Details'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
-            height: 10,
-          ),
+          SizedBox(height: 10),
           Center(
             child: Text(
               course['title'] as String,
@@ -81,16 +81,12 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
             ),
             child: Column(
               children: [
-                const SizedBox(
-                  height: 15,
-                ),
+                const SizedBox(height: 15),
                 Text(
                   "Amount: ${course['price']} Rs.",
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
+                const SizedBox(height: 10),
                 Center(
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 4),
@@ -107,7 +103,7 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
                           return GestureDetector(
                             onTap: () {
                               setState(() {
-                                selected_type =  duration;
+                                selected_type = duration;
                               });
                             },
                             child: Chip(
@@ -130,9 +126,7 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 12,
-                ),
+                const SizedBox(height: 12),
                 Padding(
                   padding: EdgeInsets.all(14.0),
                   child: ElevatedButton(
