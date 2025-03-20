@@ -1,3 +1,4 @@
+import 'package:codehub_platform/user_profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:codehub_platform/homepage.dart';
 
