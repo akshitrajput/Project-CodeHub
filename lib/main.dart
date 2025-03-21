@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
             ),
             titleMedium: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 24,
+              fontSize: 23,
               fontFamily: 'Lato',
             ),
             bodySmall: TextStyle(
