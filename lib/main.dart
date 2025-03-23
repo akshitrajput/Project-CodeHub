@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
         ),
         appBarTheme: AppBarTheme(
             color: Colors.white,
-            titleTextStyle: TextStyle(fontSize: 24,color: Colors.black54,fontFamily: 'Lato',fontWeight: FontWeight.w800)
+            titleTextStyle: TextStyle(fontSize: 23,color: Colors.black54,fontFamily: 'Lato',fontWeight: FontWeight.w800)
         ),
       ),
       home: const HomePage(),
