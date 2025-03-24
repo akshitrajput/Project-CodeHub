@@ -79,6 +79,7 @@ class _CourseListState extends State<CourseList> {
                 ),
               ],
             ),
+
             SizedBox(
               height: 60,
               child: ListView.builder(
@@ -94,6 +95,7 @@ class _CourseListState extends State<CourseList> {
                           selected_category = filter;
                         });
                       },
+
                       child: Chip(
                         side: const BorderSide(
                           color: Color.fromRGBO(0, 0, 0, 0.01),
